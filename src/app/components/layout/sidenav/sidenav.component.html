@@ -1,3 +1,9 @@
 <div class="sidenav-container">
-
+  <div class="links">
+    @for (item of sidenavItems; track item) {
+      <app-sidenav-item [sidenavItem]="item"
+                        [selected]="item.title.includes(selectedItemTitle)"
+      ></app-sidenav-item>
+    }
+  </div>
 </div>

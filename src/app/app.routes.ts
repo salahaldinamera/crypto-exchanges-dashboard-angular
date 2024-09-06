@@ -13,7 +13,17 @@ export const routes: Routes = [
   },
   {
     path: 'dashboard',
-    loadComponent: () => import('@pages/login/sign-up/sign-up.component').then(m => m.SignUpComponent),
-    title: 'SIGN_UP'
+    loadComponent: () => import('@pages/dashboard/dashboard.component').then(m => m.DashboardComponent),
+    title: 'DASHBOARD'
   },
+  {
+    path: 'trade',
+    loadComponent: () => import('@pages/trade/trade.component').then(m => m.TradeComponent),
+    title: 'TRADE'
+  },
+  {
+    path: 'settings',
+    loadComponent: () => import('@pages/settings/settings.component').then(m => m.SettingsComponent),
+    title: 'SETTINGS'
+  }
 ];
