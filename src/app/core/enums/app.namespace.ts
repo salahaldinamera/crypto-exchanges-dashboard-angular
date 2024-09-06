@@ -1,5 +1,10 @@
 export namespace AppSpace {
 
+  export enum LayoutEnum  {
+    FULL_SCREEN,
+    MAIN
+  }
+
   export enum LocalStorageKeysEnum {
     LANGUAGE = "LANGUAGE"
   }

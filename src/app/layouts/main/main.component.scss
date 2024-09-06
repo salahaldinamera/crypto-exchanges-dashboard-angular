@@ -1,0 +1,35 @@
+.main-layout {
+  $header_height: 50px;
+  $sidenav_width: 50px;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  app-header {
+    width: 100%;
+    height: $header_height;
+    border: 1px solid #e5e7eb;
+  }
+
+  .content {
+    width: 100%;
+    height: calc(100% - $header_height);
+    display: flex;
+    flex-direction: row;
+
+    app-sidenav {
+      height: 100%;
+      width: $sidenav_width;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+    }
+
+    .router-outlet-container {
+      height: 100%;
+      width: 100%;
+    }
+
+  }
+}
