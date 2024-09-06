@@ -15,28 +15,28 @@
   .icon {
     font-weight: bolder;
     font-size: 25px;
-    color: #313131;
+    color: var(--text-color);
     // Add transition to the icon color
     transition: color 0.3s ease;
   }
 
   &:hover {
     cursor: pointer;
-    background-color: lightgrey;
+    background-color: var(--surface-200);
     border-radius: 5px;
     // Add hover animation to make it more interactive
     transform: scale(1.05);
   }
 
   &.side-nav-item-selected {
-    background-color: #313131;
+    background-color: var(--primary-color);
     border-radius: 5px;
 
     // Slightly increase the size on select for a smooth animation
     transform: scale(1.1);
 
     .icon {
-      color: white;
+      color: var(--primary-color-text);
     }
   }
 }

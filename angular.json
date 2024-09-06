@@ -33,7 +33,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "bundleName": "light-theme",
+                "inject": false,
+                "input": "src/themes/light-theme.scss"
+              },
+              {
+                "bundleName": "dark-theme",
+                "inject": false,
+                "input": "src/themes/dark-theme.scss"
+              }
             ],
             "scripts": []
           },

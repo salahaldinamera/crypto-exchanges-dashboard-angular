@@ -2,6 +2,7 @@ import {TranslateService} from "@ngx-translate/core";
 import {Injectable} from "@angular/core";
 import {LocalStorageService} from "../local-storage/local-storage.service";
 import {AppSpace} from "../../enums/app.namespace";
+import {ThemeService} from "@app/core/services/theme/theme.service";
 
 
 /**
@@ -16,14 +17,17 @@ import {AppSpace} from "../../enums/app.namespace";
 @Injectable({providedIn: 'root'})
 export class AppService {
 
+  private isDarkMode: boolean = false;
+
   constructor(
     private translateService: TranslateService,
     private localStorage: LocalStorageService,
   ) {
+    this.initApp();
   }
 
   initApp() {
-    this.initAppLanguage()
+    this.initAppLanguage();
   }
 
   initAppLanguage() {

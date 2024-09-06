@@ -14,17 +14,13 @@ import {MainComponent} from "@app/layouts/main/main.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   layout: AppSpace.LayoutEnum = AppSpace.LayoutEnum.MAIN;
 
   constructor(
     public appService: AppService
   ) {
-  }
-
-  ngOnInit(): void {
-    this.appService.initApp();
   }
 
   protected readonly AppSpace = AppSpace;

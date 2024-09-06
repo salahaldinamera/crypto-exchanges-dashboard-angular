@@ -6,12 +6,18 @@ export namespace AppSpace {
   }
 
   export enum LocalStorageKeysEnum {
-    LANGUAGE = "LANGUAGE"
+    LANGUAGE = "LANGUAGE",
+    THEME = "THEME"
   }
 
   export enum LanguageCodesEnum {
     EN = "en",
     ES = "es",
     FR = "fr",
+  }
+
+  export enum ThemeEnum {
+    LIGHT = "LIGHT",
+    DARK = "DARK",
   }
 }

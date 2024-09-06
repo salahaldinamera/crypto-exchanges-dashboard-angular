@@ -10,7 +10,6 @@
   app-header {
     width: 100%;
     height: $header_height;
-    border: 1px solid #e5e7eb;
   }
 
   .content {
@@ -23,14 +22,15 @@
       height: 100%;
       width: $sidenav_width;
       overflow: hidden;
-      border: 1px solid #e5e7eb;
     }
 
     .router-outlet-container {
       height: 100%;
       width: 100%;
 
-      background-color: #eff3f8;
+      background-color: var(--surface-c);
+
+      border-top-left-radius: 25px;
     }
 
   }
