@@ -4,10 +4,16 @@
       <span class="pi pi-microsoft"></span>
       <span>DASHBOARD</span>
     </div>
-
   </div>
 
   <div class="right-items">
-
+    <p-button [rounded]="true" [text]="true" (click)="languageMenu.toggle($event)">
+      <span class="material-icons">language</span>
+    </p-button>
+    <p-button [rounded]="true" [text]="true">
+      <span class="material-icons">light_mode</span>
+    </p-button>
   </div>
 </div>
+
+<p-menu #languageMenu [popup]="true" [model]="languageItems" />

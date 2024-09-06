@@ -3,7 +3,6 @@ import {SidenavItem} from "@app/core/models/sidenav/sidenav-item";
 import {Router} from "@angular/router";
 import {NgClass} from "@angular/common";
 import {TooltipModule} from "primeng/tooltip";
-import {SidenavItems} from "@app/core/data/sidenav-items";
 import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
@@ -30,6 +29,4 @@ export class SidenavItemComponent {
     if (this.sidenavItem()?.link == null) return;
     this.router.navigate([this.sidenavItem()?.link]);
   }
-
-  protected readonly SidenavItems = SidenavItems;
 }
