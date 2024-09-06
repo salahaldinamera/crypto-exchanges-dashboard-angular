@@ -7,9 +7,13 @@
   display: flex;
   flex-direction: column;
 
+  background-color: var(--surface-ground);
+
   app-header {
     width: 100%;
     height: $header_height;
+
+    background-color: var(--surface-ground);
   }
 
   .content {
@@ -22,13 +26,15 @@
       height: 100%;
       width: $sidenav_width;
       overflow: hidden;
+
+      background-color: var(--surface-ground);
     }
 
     .router-outlet-container {
       height: 100%;
       width: 100%;
 
-      background-color: var(--surface-c);
+      background-color: var(--surface-100);
 
       border-top-left-radius: 25px;
     }

@@ -23,14 +23,14 @@
   &:hover {
     cursor: pointer;
     background-color: var(--surface-200);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     // Add hover animation to make it more interactive
     transform: scale(1.05);
   }
 
   &.side-nav-item-selected {
     background-color: var(--primary-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 
     // Slightly increase the size on select for a smooth animation
     transform: scale(1.1);
