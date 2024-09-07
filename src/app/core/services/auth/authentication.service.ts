@@ -9,7 +9,7 @@ import {SignInResponseDto} from "@app/core/models/auth/sign-in-response.dto";
 
 @Injectable({providedIn: 'root'})
 export class AuthenticationService {
-  private baseUrl: string = environment.baseUrl + '/api/v1/authentication/';
+  private baseUrl: string = environment.baseUrl + 'api/v1/authenticate/';
 
   private signInUrl: string = 'sign-in';
   private signUpUrl: string = 'sign-up';

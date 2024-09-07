@@ -15,21 +15,18 @@ export class AuthGuard implements CanActivate {
   }
 
   canActivate(): boolean | Observable<boolean> {
-    console.log('hi')
     const token = this.localStorageService.getLocalStorageItem(LocalStorageKeysEnum.TOKEN);
-    console.log(token);
+
     if (token && this.isTokenValid(token)) {
       return true;
     } else {
-      this.router.navigate(['sign-in'],{queryParams:{'redirect':window.location.pathname}}).then();
+      const redirectPath = window.location.pathname !== '/sign-out' ? { 'redirect': window.location.pathname } : {};
+      this.router.navigate(['sign-in'], { queryParams: redirectPath }).then();
       return false;
     }
   }
 
-  // Simple token validation, you can improve it as needed
   private isTokenValid(token: string): boolean {
-    // Decode token and validate its expiration and other details
-    // You can use a JWT library here
-    return !!token; // For simplicity, we are just checking if the token exists
+    return !!token;
   }
 }

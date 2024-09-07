@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import {AuthGuard} from "@app/core/gaurd/authGuard";
+import {AuthGuard} from "@app/core/gaurd/auth-guard";
 import {FullScreenLayoutComponent} from "@app/layouts/full-screen/full-screen-layout.component";
 import {MainLayoutComponent} from "@app/layouts/main/main-layout.component";
 
@@ -15,12 +15,17 @@ export const routes: Routes = [
     children: [
       {
         path: 'sign-in',
-        loadComponent: () => import('@pages/login/sign-in/sign-in.component').then(m => m.SignInComponent),
-        title: 'LOGIN'
+        loadComponent: () => import('@pages/auth/sign-in/sign-in.component').then(m => m.SignInComponent),
+        title: 'SIGN_IN'
+      },
+      {
+        path: 'sign-out',
+        loadComponent: () => import('@pages/auth/sign-out/sign-out.component').then(m => m.SignOutComponent),
+        title: 'SIGN_OUT'
       },
       {
         path: 'sign-up',
-        loadComponent: () => import('@pages/login/sign-up/sign-up.component').then(m => m.SignUpComponent),
+        loadComponent: () => import('@pages/auth/sign-up/sign-up.component').then(m => m.SignUpComponent),
         title: 'SIGN_UP'
       },
     ]

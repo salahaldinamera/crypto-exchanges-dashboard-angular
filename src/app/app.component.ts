@@ -4,6 +4,7 @@ import {TranslateModule} from "@ngx-translate/core";
 import {Button} from "primeng/button";
 import {FullScreenLayoutComponent} from "@app/layouts/full-screen/full-screen-layout.component";
 import {MainLayoutComponent} from "@app/layouts/main/main-layout.component";
+import {AppService} from "@app/core/services/app/app.service";
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,9 @@ import {MainLayoutComponent} from "@app/layouts/main/main-layout.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+
+  constructor(
+    private appService: AppService,
+  ) {
+  }
 }
