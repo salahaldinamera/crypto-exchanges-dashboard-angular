@@ -5,6 +5,7 @@ import {Button} from "primeng/button";
 import {FullScreenLayoutComponent} from "@app/layouts/full-screen/full-screen-layout.component";
 import {MainLayoutComponent} from "@app/layouts/main/main-layout.component";
 import {AppService} from "@app/core/services/app/app.service";
+import {ThemeService} from "@app/core/services/theme/theme.service";
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ export class AppComponent {
 
   constructor(
     private appService: AppService,
+    public themeService: ThemeService,
   ) {
   }
 }
