@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {SidenavItem} from "@app/core/models/sidenav/sidenav-item";
 import {SidenavItemComponent} from "@app/components/layout/sidenav/sidenav-item/sidenav-item.component";
 import {ActivationEnd, Router} from "@angular/router";
@@ -13,19 +13,19 @@ import {Subscription} from "rxjs";
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss'
 })
-export class SidenavComponent implements OnInit{
-  subscription: Subscription | undefined;
+export class SidenavComponent implements OnInit, OnDestroy {
+  subscription!: Subscription;
   selectedItemTitle: string = '';
   sidenavItems: SidenavItem[] | undefined;
 
   constructor(
     private router: Router
   ) {
+    this.subscribeRoutingChanges();
   }
 
   ngOnInit(): void {
     this.initSidenavItems()
-    this.subscribeRoutingChanges();
   }
 
   private initSidenavItems() {
@@ -46,9 +46,9 @@ export class SidenavComponent implements OnInit{
         link: '/settings',
       },
       {
-        title: 'LOGOUT',
+        title: 'SIGN_OUT',
         icon: 'logout',
-        link: '/logout',
+        link: '/sign-out',
       }
     ]
   }
@@ -59,6 +59,10 @@ export class SidenavComponent implements OnInit{
         event.snapshot.title && (this.selectedItemTitle = event.snapshot.title);
       }
     });
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe()
   }
 
 }

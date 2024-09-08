@@ -17,8 +17,6 @@ import {ThemeService} from "@app/core/services/theme/theme.service";
 @Injectable({providedIn: 'root'})
 export class AppService {
 
-  private isDarkMode: boolean = false;
-
   constructor(
     private translateService: TranslateService,
     private localStorage: LocalStorageService,

@@ -11,9 +11,9 @@ import {HeaderComponent} from "@app/components/layout/header/header.component";
     SidenavComponent,
     HeaderComponent
   ],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.scss'
+  templateUrl: './main-layout.component.html',
+  styleUrl: './main-layout.component.scss'
 })
-export class MainComponent {
+export class MainLayoutComponent {
 
 }

@@ -7,9 +7,9 @@ import {RouterOutlet} from "@angular/router";
   imports: [
     RouterOutlet
   ],
-  templateUrl: './full-screen.component.html',
-  styleUrl: './full-screen.component.scss'
+  templateUrl: './full-screen-layout.component.html',
+  styleUrl: './full-screen-layout.component.scss'
 })
-export class FullScreenComponent {
+export class FullScreenLayoutComponent {
 
 }

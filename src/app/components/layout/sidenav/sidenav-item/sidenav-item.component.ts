@@ -4,6 +4,7 @@ import {Router} from "@angular/router";
 import {NgClass} from "@angular/common";
 import {TooltipModule} from "primeng/tooltip";
 import {TranslateModule} from "@ngx-translate/core";
+import {AuthService} from "@app/core/services/auth/auth.service";
 
 @Component({
   selector: 'app-sidenav-item',
@@ -21,7 +22,7 @@ export class SidenavItemComponent {
   selected = input<boolean>();
 
   constructor(
-    private router: Router
+    private router: Router,
   ) {
   }
 

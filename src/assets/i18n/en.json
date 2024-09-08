@@ -1,5 +1,19 @@
 {
-  "HELLO": "Hello, welcome to our app!",
-  "CLICK_ME": "Click Me",
-  "DASHBOARD": "Dashboard EN"
+  "DASHBOARD": "Dashboard EN",
+  "PAGES": {
+    "SIGN_IN": "Sign In",
+    "SIGN_UP": "Sign Up"
+  },
+  "FORMS": {
+    "FIRST_NAME": "First Name",
+    "LAST_NAME": "Last Name",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD":  "Confirm Password",
+    "SIGN_IN": "Sign In",
+    "SIGN_UP": "Sign Up",
+    "SIGN_UP_LINK": "Sign Up",
+    "SIGN_IN_LINK": "Sign IN",
+    "FORGOT_PASSWORD": "Forgot Password"
+  }
 }

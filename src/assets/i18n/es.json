@@ -1,5 +1,19 @@
 {
-  "HELLO": "¡Hola, bienvenido a nuestra aplicación!",
-  "CLICK_ME": "Haz clic aquí",
-  "DASHBOARD": "Dashboard ES"
+  "DASHBOARD": "Tablero ES",
+  "PAGES": {
+    "SIGN_IN": "Iniciar sesión",
+    "SIGN_UP": "Registrarse"
+  },
+  "FORMS": {
+    "FIRST_NAME": "Nombre",
+    "LAST_NAME": "Apellido",
+    "USERNAME": "Nombre de usuario",
+    "PASSWORD": "Contraseña",
+    "CONFIRM_PASSWORD": "Confirmar contraseña",
+    "SIGN_IN": "Iniciar sesión",
+    "SIGN_UP": "Registrarse",
+    "SIGN_UP_LINK": "Registrarse",
+    "SIGN_IN_LINK": "Iniciar sesión",
+    "FORGOT_PASSWORD": "¿Olvidaste tu contraseña?"
+  }
 }
