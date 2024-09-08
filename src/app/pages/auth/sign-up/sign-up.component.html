@@ -2,15 +2,11 @@
   <div class="content">
     <form [formGroup]="loginForm">
       <p class="title">{{'PAGES.SIGN_UP' | translate }}</p>
-      <div class="row">
-        <input type="text" pInputText formControlName="firstName" [placeholder]="'FORMS.FIRST_NAME' | translate"/>
-        <input type="text" pInputText formControlName="lastName" [placeholder]="'FORMS.LAST_NAME' | translate"/>
-      </div>
+      <input type="text" pInputText formControlName="firstName" [placeholder]="'FORMS.FIRST_NAME' | translate"/>
+      <input type="text" pInputText formControlName="lastName" [placeholder]="'FORMS.LAST_NAME' | translate"/>
       <input type="text" pInputText formControlName="username" [placeholder]="'FORMS.USERNAME' | translate"/>
-      <div class="row">
-        <p-password formControlName="password" [placeholder]="'FORMS.PASSWORD' | translate" [toggleMask]="true"/>
-        <p-password formControlName="password" [placeholder]="'FORMS.CONFIRM_PASSWORD' | translate" [toggleMask]="true"/>
-      </div>
+      <p-password formControlName="password" [placeholder]="'FORMS.PASSWORD' | translate" [toggleMask]="true"/>
+      <p-password formControlName="password" [placeholder]="'FORMS.CONFIRM_PASSWORD' | translate" [toggleMask]="true"/>
       <button pButton class="sign-in-button" [label]="'FORMS.SIGN_UP' | translate" (click)="signUp()"></button>
       <p-button [link]="true" [label]="'FORMS.SIGN_IN_LINK' | translate" (click)="signInLink()"></p-button>
     </form>
