@@ -11,7 +11,7 @@ import {ExchangeAccount} from "@app/core/models/exchange-accounts/exchange-accou
   imports: [
     ToolbarModule,
     Button,
-    TableModule
+    TableModule,
   ],
   templateUrl: './exchanges-accounts.component.html',
   styleUrl: './exchanges-accounts.component.scss'
