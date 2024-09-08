@@ -10,20 +10,20 @@
   <p-table [value]="exchangeAccounts">
     <ng-template pTemplate="header">
       <tr>
-        <th>Name</th>
         <th>Color</th>
         <th>Logo</th>
+        <th>Name</th>
         <th>Exchange APIs</th>
       </tr>
     </ng-template>
 
     <ng-template pTemplate="body" let-exchangeAccount>
       <tr>
-        <td>{{ exchangeAccount.name }}</td>
         <td>
           <div [style.backgroundColor]="exchangeAccount.color" class="color-box"></div>
         </td>
         <td><img [src]="exchangeAccount.logo" alt="Logo" class="logo-image" /></td>
+        <td>{{ exchangeAccount.name }}</td>
         <td>
           <ul>
             <li *ngFor="let api of exchangeAccount.exchangeApis">{{ api.name }}</li>
