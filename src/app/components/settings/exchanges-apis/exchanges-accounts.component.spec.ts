@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExchangesApisComponent } from './exchanges-apis.component';
+import { ExchangesAccountsComponent } from './exchanges-accounts.component';
 
 describe('ExchangesApisComponent', () => {
-  let component: ExchangesApisComponent;
-  let fixture: ComponentFixture<ExchangesApisComponent>;
+  let component: ExchangesAccountsComponent;
+  let fixture: ComponentFixture<ExchangesAccountsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ExchangesApisComponent]
+      imports: [ExchangesAccountsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ExchangesApisComponent);
+    fixture = TestBed.createComponent(ExchangesAccountsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

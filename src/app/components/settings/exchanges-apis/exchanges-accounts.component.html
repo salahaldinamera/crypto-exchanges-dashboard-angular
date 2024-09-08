@@ -1,0 +1,35 @@
+<div class="exchanges-apis-container">
+  <p-toolbar>
+    <div class="p-toolbar-group-start"></div>
+    <div class="p-toolbar-group-center"></div>
+    <div class="p-toolbar-group-end">
+      <p-button icon="pi pi-plus"></p-button>
+    </div>
+  </p-toolbar>
+
+  <p-table [value]="exchangeAccounts">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Logo</th>
+        <th>Exchange APIs</th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-exchangeAccount>
+      <tr>
+        <td>{{ exchangeAccount.name }}</td>
+        <td>
+          <div [style.backgroundColor]="exchangeAccount.color" class="color-box"></div>
+        </td>
+        <td><img [src]="exchangeAccount.logo" alt="Logo" class="logo-image" /></td>
+        <td>
+          <ul>
+            <li *ngFor="let api of exchangeAccount.exchangeApis">{{ api.name }}</li>
+          </ul>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

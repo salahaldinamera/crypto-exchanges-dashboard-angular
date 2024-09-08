@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {TabViewModule} from "primeng/tabview";
 import {TranslateModule} from "@ngx-translate/core";
-import {ExchangesApisComponent} from "@app/components/settings/exchanges-apis/exchanges-apis.component";
+import {ExchangesAccountsComponent} from "@app/components/settings/exchanges-apis/exchanges-accounts.component";
 
 @Component({
   selector: 'app-settings',
@@ -9,7 +9,7 @@ import {ExchangesApisComponent} from "@app/components/settings/exchanges-apis/ex
   imports: [
     TabViewModule,
     TranslateModule,
-    ExchangesApisComponent
+    ExchangesAccountsComponent
   ],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.scss'
