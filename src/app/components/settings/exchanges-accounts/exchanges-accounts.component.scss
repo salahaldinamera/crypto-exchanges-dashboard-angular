@@ -1,0 +1,19 @@
+.exchanges-apis-container {
+  .color-box {
+    width: 20px;
+    height: 20px;
+    border: var(--primary-color-text);
+  }
+
+  .logo-image {
+    width: 50px;
+    height: auto;
+    border-radius: var(--border-radius);
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+}

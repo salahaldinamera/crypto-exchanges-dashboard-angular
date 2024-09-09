@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {environment} from "@src/environments/environment.prod";
+import {environment} from "@src/environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {SignInDto} from "@app/core/models/auth/sign-in.dto";
 import {SignUpDto} from "@app/core/models/auth/sign-up.dto";
@@ -15,17 +15,17 @@ export class AuthenticationService {
   private signUpUrl: string = 'sign-up';
 
   constructor(
-    private httpClient: HttpClient,
+    private http: HttpClient,
   ) {
   }
 
   signIn(signInDto: SignInDto): Observable<SignInResponseDto> {
     const url = this.baseUrl + this.signInUrl;
-    return this.httpClient.post<SignInResponseDto>(url, signInDto);
+    return this.http.post<SignInResponseDto>(url, signInDto);
   }
 
   signUp(signUpDto: SignUpDto) {
     const url = this.baseUrl + this.signUpUrl;
-    return this.httpClient.post(url, signUpDto);
+    return this.http.post(url, signUpDto);
   }
 }

@@ -1,11 +1,11 @@
 <div class="sign-in-container">
   <p-messages [(value)]="messages" [enableService]="false"/>
 
-  <div class="content  card">
+  <div class="content card">
     <form [formGroup]="loginForm">
       <p class="title">{{'PAGES.SIGN_IN' | translate }}</p>
       <input type="text" pInputText formControlName="username" [placeholder]="'FORMS.USERNAME' | translate"/>
-      <p-password formControlName="password" [placeholder]="'FORMS.PASSWORD' | translate" [toggleMask]="true"/>
+      <p-password formControlName="password" [placeholder]="'FORMS.PASSWORD' | translate" [toggleMask]="true" [feedback]="false"/>
       <button pButton class="sign-in-button" [label]="'FORMS.SIGN_IN' | translate" (click)="signIn()"></button>
 <!--      <p-button [link]="true" [label]="'FORMS.FORGOT_PASSWORD' | translate"></p-button>-->
       <p-button [link]="true" [label]="'FORMS.SIGN_UP_LINK' | translate" (click)="signUpLink()"></p-button>
