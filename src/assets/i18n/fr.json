@@ -1,5 +1,11 @@
 {
-  "DASHBOARD": "Tableau de bord FR",
+  "DASHBOARD": "Tableau de bord",
+  "GENERAL": {
+    "CREATE": "Créer",
+    "UPDATE": "Mettre à jour",
+    "SAVE": "Sauvegarder",
+    "CANCEL": "Annuler"
+  },
   "PAGES": {
     "SIGN_IN": "Se connecter",
     "SIGN_UP": "S'inscrire"
@@ -14,6 +20,9 @@
     "SIGN_UP": "S'inscrire",
     "SIGN_UP_LINK": "S'inscrire",
     "SIGN_IN_LINK": "Se connecter",
-    "FORGOT_PASSWORD": "Mot de passe oublié"
+    "FORGOT_PASSWORD": "Mot de passe oublié",
+    "NAME": "Nom",
+    "COLOR": "Couleur",
+    "LOGO": "Logo"
   }
 }

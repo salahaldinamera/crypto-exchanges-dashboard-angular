@@ -1,5 +1,11 @@
 {
-  "DASHBOARD": "Tablero ES",
+  "DASHBOARD": "Tablero",
+  "GENERAL": {
+    "CREATE": "Crear",
+    "UPDATE": "Actualizar",
+    "SAVE": "Guardar",
+    "CANCEL": "Cancelar"
+  },
   "PAGES": {
     "SIGN_IN": "Iniciar sesión",
     "SIGN_UP": "Registrarse"
@@ -14,6 +20,9 @@
     "SIGN_UP": "Registrarse",
     "SIGN_UP_LINK": "Registrarse",
     "SIGN_IN_LINK": "Iniciar sesión",
-    "FORGOT_PASSWORD": "¿Olvidaste tu contraseña?"
+    "FORGOT_PASSWORD": "Olvidé mi contraseña",
+    "NAME": "Nombre",
+    "COLOR": "Color",
+    "LOGO": "Logo"
   }
 }
