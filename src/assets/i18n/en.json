@@ -1,5 +1,11 @@
 {
   "DASHBOARD": "Dashboard EN",
+  "GENERAL": {
+    "CREATE": "Create",
+    "UPDATE": "Update",
+    "SAVE": "Save",
+    "CANCEL": "Cancel"
+  },
   "PAGES": {
     "SIGN_IN": "Sign In",
     "SIGN_UP": "Sign Up"
@@ -14,6 +20,9 @@
     "SIGN_UP": "Sign Up",
     "SIGN_UP_LINK": "Sign Up",
     "SIGN_IN_LINK": "Sign IN",
-    "FORGOT_PASSWORD": "Forgot Password"
+    "FORGOT_PASSWORD": "Forgot Password",
+    "NAME": "Name",
+    "COLOR": "Color",
+    "LOGO": "Logo"
   }
 }

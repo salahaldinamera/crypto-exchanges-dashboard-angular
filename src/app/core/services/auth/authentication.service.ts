@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {environment} from "@src/environments/environment.prod";
+import {environment} from "@src/environments/environment";
 import {HttpClient} from "@angular/common/http";
 import {SignInDto} from "@app/core/models/auth/sign-in.dto";
 import {SignUpDto} from "@app/core/models/auth/sign-up.dto";

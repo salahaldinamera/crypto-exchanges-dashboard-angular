@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {environment} from "@src/environments/environment.prod";
+import {environment} from "@src/environments/environment";
 import {ExchangeAccount} from "@app/core/models/exchange-accounts/exchange-account.model";
 import {Observable} from "rxjs";
 
@@ -33,8 +33,8 @@ export class ExchangesAccountsService {
     return this.http.put<ExchangeAccount>(url, exchangeAccount);
   }
 
-  deleteExchangeAccount(id: number): Observable<ExchangeAccount> {
+  deleteExchangeAccount(id: number): Observable<number> {
     const url = this.baseUrl + id;
-    return this.http.delete<ExchangeAccount>(url);
+    return this.http.delete<number>(url);
   }
 }

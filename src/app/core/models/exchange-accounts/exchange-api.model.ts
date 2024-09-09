@@ -1,4 +1,4 @@
-export interface ExchangeApi {
+export interface ExchangeAccountApi {
   name: string;
   apiKey: string;
   apiSecret: string;

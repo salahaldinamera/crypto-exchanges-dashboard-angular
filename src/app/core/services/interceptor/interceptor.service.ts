@@ -3,8 +3,6 @@ import {HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpRequest, HttpR
 import {Observable} from 'rxjs';
 import {tap} from 'rxjs/operators';
 import {AppSpace} from "@app/core/enums/app.namespace";
-import {MessageService} from "primeng/api";
-import {ToastService} from "@app/core/services/toast/toast.service";
 
 
 @Injectable({providedIn: 'root'})
@@ -28,6 +26,7 @@ export class InterceptorService implements HttpInterceptor {
           }
         },
         (error) => {
+          console.log(error)
         },
       ),
     );
