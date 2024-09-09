@@ -15,3 +15,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.card {
+  background-color: var(--surface-card);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--surface-border);
+}

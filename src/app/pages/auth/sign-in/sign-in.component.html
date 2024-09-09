@@ -1,7 +1,7 @@
 <div class="sign-in-container">
   <p-messages [(value)]="messages" [enableService]="false"/>
 
-  <div class="content  card">
+  <div class="content card">
     <form [formGroup]="loginForm">
       <p class="title">{{'PAGES.SIGN_IN' | translate }}</p>
       <input type="text" pInputText formControlName="username" [placeholder]="'FORMS.USERNAME' | translate"/>
