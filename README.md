@@ -1,27 +1,50 @@
 # CryptoExchangesDashboardAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+## Overview
 
-## Development server
+**CryptoExchangesDashboardAngular** is a comprehensive dashboard application designed to streamline the management of cryptocurrency exchanges from a single, user-friendly interface. Built with Angular 14 and PrimeNG, this project provides an intuitive and efficient way to oversee and interact with various exchange platforms.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Unified Dashboard:** Centralized view for managing multiple cryptocurrency exchanges.
+- **Interactive Tables:** View and manage exchange data with dynamic tables.
+- **Demo and Non-Demo API Sections:** Separate sections for interacting with demo and live APIs.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Internationalization:** Built-in support for multiple languages using ngx-translate.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies
 
-## Build
+- **Angular 14:** A powerful framework for building dynamic web applications.
+- **PrimeNG:** A rich set of UI components for Angular applications.
+- **ngx-translate:** A library for internationalization and localization.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+To get started with the project, follow these steps:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone the Repository:**
 
-## Running end-to-end tests
+   ```bash
+   git clone https://github.com/salahaldinamera/crypto-exchanges-dashboard-angular.git
+   cd crypto-exchanges-dashboard-angular
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Samples
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Settings
+- **Dark Mode**
+  ![Settings Dark](docs/samples/settings/settings-dark.png)
+- **Light Mode**
+  ![Settings Light](docs/samples/settings/settings-light.png)
+
+### Sign In
+- **Dark Mode**
+  ![Sign In Dark](docs/samples/sign-in/sign-in-dark.png)
+- **Light Mode**
+  ![Sign In Light](docs/samples/sign-in/sign-in-light.png)
+
+### Sign Up
+- **Dark Mode**
+  ![Sign Up Dark](docs/samples/sign-up/sign-up-dark.png)
+- **Light Mode**
+  ![Sign Up Light](docs/samples/sign-up/sign-up-light.png)
