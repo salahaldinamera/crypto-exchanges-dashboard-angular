@@ -2,7 +2,7 @@
 
 ## Overview
 
-**CryptoExchangesDashboardAngular** is a comprehensive dashboard application designed to streamline the management of cryptocurrency exchanges from a single, user-friendly interface. Built with Angular 14 and PrimeNG, this project provides an intuitive and efficient way to oversee and interact with various exchange platforms.
+**CryptoExchangesDashboardAngular** is a comprehensive dashboard application designed to streamline the management of cryptocurrency exchanges from a single, user-friendly interface. Built with Angular 18 and PrimeNG, this project provides an intuitive and efficient way to oversee and interact with various exchange platforms.
 
 ## Features
 
@@ -14,7 +14,7 @@
 
 ## Technologies
 
-- **Angular 14:** A powerful framework for building dynamic web applications.
+- **Angular 18:** A powerful framework for building dynamic web applications.
 - **PrimeNG:** A rich set of UI components for Angular applications.
 - **ngx-translate:** A library for internationalization and localization.
 
@@ -31,12 +31,6 @@ To get started with the project, follow these steps:
 
 ## Samples
 
-### Settings
-- **Dark Mode**
-  ![Settings Dark](docs/samples/settings/settings-dark.png)
-- **Light Mode**
-  ![Settings Light](docs/samples/settings/settings-light.png)
-
 ### Sign In
 - **Dark Mode**
   ![Sign In Dark](docs/samples/sign-in/sign-in-dark.png)
@@ -48,3 +42,9 @@ To get started with the project, follow these steps:
   ![Sign Up Dark](docs/samples/sign-up/sign-up-dark.png)
 - **Light Mode**
   ![Sign Up Light](docs/samples/sign-up/sign-up-light.png)
+- 
+### Settings
+- **Dark Mode**
+  ![Settings Dark](docs/samples/settings/settings-dark.png)
+- **Light Mode**
+  ![Settings Light](docs/samples/settings/settings-light.png)
