@@ -12,6 +12,21 @@
 - **Responsive Design:** Optimized for both desktop and mobile devices.
 - **Internationalization:** Built-in support for multiple languages using ngx-translate.
 
+## Current Features
+
+- **Settings:** Customize the application with various user preferences.
+
+## Planned Features
+
+### Dashboard Page
+- Provide an overview of exchange performance, including key metrics like total volume, market trends, and active traders.
+
+### Trading Page
+- A dedicated interface for executing trades across multiple cryptocurrency exchanges with live data and trading tools.
+
+### Users Page
+- Manage user accounts and permissions, offering admin controls for adding, editing, and removing users.
+
 ## Technologies
 
 - **Angular 18:** A powerful framework for building dynamic web applications.
