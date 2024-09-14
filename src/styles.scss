@@ -2,6 +2,7 @@
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 @import 'material-icons/iconfont/material-icons.css';
+@import "styles/custom-styles";
 
 html {
   width: 100%;
@@ -14,10 +15,4 @@ body {
 
   margin: 0;
   padding: 0;
-}
-
-.card {
-  background-color: var(--surface-card);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--surface-border);
 }
