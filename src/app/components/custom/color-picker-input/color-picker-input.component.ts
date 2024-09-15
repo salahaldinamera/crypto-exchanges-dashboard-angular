@@ -52,4 +52,7 @@ export class ColorPickerInputComponent implements ControlValueAccessor {
     this.isDisabled = isDisabled;
   }
 
+  onValueChange() {
+    this.onChange(this.value);
+  }
 }

@@ -1,4 +1,4 @@
 <div class="color-picker-input">
-  <p-colorPicker class="picker" [(ngModel)]="value" />
-  <app-float-label-input [title]="title()" [(ngModel)]="value" />
+  <p-colorPicker class="picker" [(ngModel)]="value" (ngModelChange)="onValueChange()" />
+  <app-float-label-input [title]="title()" [(ngModel)]="value" (ngModelChange)="onValueChange()" />
 </div>

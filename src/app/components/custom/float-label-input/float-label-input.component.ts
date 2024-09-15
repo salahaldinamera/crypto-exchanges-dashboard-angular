@@ -47,4 +47,8 @@ export class FloatLabelInputComponent implements ControlValueAccessor {
   setDisabledState?(isDisabled: boolean): void {
     this.isDisabled = isDisabled;
   }
+
+  onValueChange() {
+    this.onChange(this.value);
+  }
 }

@@ -1,6 +1,6 @@
 <div class="float-label-input">
   <p-floatLabel class="p-float-label-style">
-    <input id="float-label-input" type="text" pInputText [(ngModel)]="value" />
+    <input id="float-label-input" type="text" pInputText [(ngModel)]="value" (ngModelChange)="onValueChange()"  />
     <label for="float-label-input">{{ title() | translate }}</label>
   </p-floatLabel>
 </div>

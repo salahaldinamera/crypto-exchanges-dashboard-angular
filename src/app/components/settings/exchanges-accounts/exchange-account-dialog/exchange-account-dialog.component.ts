@@ -1,11 +1,17 @@
 import {Component, OnInit, output} from '@angular/core';
 import { DialogModule } from 'primeng/dialog';
-import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 import { ExchangeAccount } from '@app/core/models/exchange-accounts/exchange-account.model';
 import { TranslateModule } from '@ngx-translate/core';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import {ExchangesAccountsService} from "@app/core/services/exchanges-apis/exchanges-accounts.service";
+import {InputGroupModule} from "primeng/inputgroup";
+import {FloatLabelModule} from "primeng/floatlabel";
+import {ColorPickerModule} from "primeng/colorpicker";
+import {InputGroupAddonModule} from "primeng/inputgroupaddon";
+import {FloatLabelInputComponent} from "@app/components/custom/float-label-input/float-label-input.component";
+import {ColorPickerInputComponent} from "@app/components/custom/color-picker-input/color-picker-input.component";
 
 @Component({
   selector: 'app-exchange-account-dialog',
@@ -15,7 +21,14 @@ import {ExchangesAccountsService} from "@app/core/services/exchanges-apis/exchan
     TranslateModule,
     ReactiveFormsModule,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    InputGroupModule,
+    FloatLabelModule,
+    ColorPickerModule,
+    FormsModule,
+    InputGroupAddonModule,
+    FloatLabelInputComponent,
+    ColorPickerInputComponent
   ],
   templateUrl: './exchange-account-dialog.component.html',
   styleUrls: ['./exchange-account-dialog.component.scss']

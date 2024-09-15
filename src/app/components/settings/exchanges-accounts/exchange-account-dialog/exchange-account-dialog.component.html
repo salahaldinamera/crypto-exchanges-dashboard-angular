@@ -1,8 +1,9 @@
 <p-dialog [header]="(exchangeAccount?.id ? 'GENERAL.UPDATE' : 'GENERAL.CREATE') | translate" [modal]="true" [draggable]="false" [(visible)]="visible" [style]="{ width: '25rem' }" [closable]="false">
   <form [formGroup]="formGroup" class="dialog-container">
-    <input type="text" pInputText formControlName="name" [placeholder]="'FORMS.NAME' | translate" />
-    <input type="text" pInputText formControlName="color" [placeholder]="'FORMS.COLOR' | translate" />
-    <input type="text" pInputText formControlName="logo" [placeholder]="'FORMS.LOGO' | translate" />
+
+    <app-color-picker-input title="FORMS.COLOR" formControlName="color" />
+    <app-float-label-input title="FORMS.LOGO" formControlName="logo" />
+    <app-float-label-input title="FORMS.NAME" formControlName="name" />
 
     <div class="actions">
       <p-button [label]="'GENERAL.CANCEL' | translate" [text]="true" (onClick)="onCancel()"></p-button>
