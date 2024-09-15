@@ -4,13 +4,14 @@ import {AppSpace} from "@app/core/enums/app.namespace";
 import LocalStorageKeysEnum = AppSpace.LocalStorageKeysEnum;
 import {LocalStorageService} from "@app/core/services/local-storage/local-storage.service";
 import {Injectable} from "@angular/core";
+import {jwtDecode} from "jwt-decode";
 
 @Injectable({providedIn: 'root'})
 export class AuthGuard implements CanActivate {
 
   constructor(
     private router: Router,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
   ) {
   }
 
@@ -20,13 +21,26 @@ export class AuthGuard implements CanActivate {
     if (token && this.isTokenValid(token)) {
       return true;
     } else {
-      const redirectPath = window.location.pathname !== '/sign-out' ? { 'redirect': window.location.pathname } : {};
+      const isSignIn: string  = 'sign-in';
+      const isSignOut: string  = 'sign-out';
+      const redirectPath = (!isSignIn || !isSignOut) ? { 'redirect': window.location.pathname } : {};
       this.router.navigate(['sign-in'], { queryParams: redirectPath }).then();
       return false;
     }
   }
 
   private isTokenValid(token: string): boolean {
-    return !!token;
+    try {
+      const decodedToken: any = jwtDecode(token);
+      const expirationTime = decodedToken.exp * 1000; // 'exp' is in seconds, convert to milliseconds
+      const currentTime = Date.now();
+
+      // Token is valid if it's not expired
+      return currentTime < expirationTime;
+    } catch (error) {
+      // Handle invalid token format
+      console.error('Invalid token format:', error);
+      return false;
+    }
   }
 }

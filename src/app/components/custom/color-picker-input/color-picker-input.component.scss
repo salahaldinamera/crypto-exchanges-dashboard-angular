@@ -1,0 +1,15 @@
+.color-picker-input {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+
+  gap: 5px;
+
+  .picker {
+    position: absolute;
+    right: 85px;
+    top: 122px;
+    transform: translateY(-100%);
+    z-index: 1;
+  }
+}

@@ -1,5 +1,4 @@
 {
-  "DASHBOARD": "Dashboard EN",
   "GENERAL": {
     "CREATE": "Create",
     "UPDATE": "Update",
@@ -8,14 +7,18 @@
   },
   "PAGES": {
     "SIGN_IN": "Sign In",
-    "SIGN_UP": "Sign Up"
+    "SIGN_UP": "Sign Up",
+    "DASHBOARD": "Dashboard",
+    "TRADING": "Trading",
+    "SETTINGS": "Settings",
+    "EXCHANGES_ACCOUNTS": "Exchanges Accounts"
   },
   "FORMS": {
     "FIRST_NAME": "First Name",
     "LAST_NAME": "Last Name",
     "USERNAME": "Username",
     "PASSWORD": "Password",
-    "CONFIRM_PASSWORD":  "Confirm Password",
+    "CONFIRM_PASSWORD": "Confirm Password",
     "SIGN_IN": "Sign In",
     "SIGN_UP": "Sign Up",
     "SIGN_UP_LINK": "Sign Up",
@@ -23,6 +26,11 @@
     "FORGOT_PASSWORD": "Forgot Password",
     "NAME": "Name",
     "COLOR": "Color",
-    "LOGO": "Logo"
+    "LOGO": "Logo",
+    "ACTIONS": "Actions",
+    "API_KEY": "Api Key",
+    "API_SECRET": "Api Secret",
+    "DEMO": "Demo",
+    "REAL": "Real"
   }
 }

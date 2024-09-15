@@ -1,12 +1,32 @@
 <p-dialog [header]="(exchangeAccount?.id ? 'GENERAL.UPDATE' : 'GENERAL.CREATE') | translate" [modal]="true" [draggable]="false" [(visible)]="visible" [style]="{ width: '25rem' }" [closable]="false">
-  <form [formGroup]="formGroup" class="dialog-container">
-    <input type="text" pInputText formControlName="name" [placeholder]="'FORMS.NAME' | translate" />
-    <input type="text" pInputText formControlName="color" [placeholder]="'FORMS.COLOR' | translate" />
-    <input type="text" pInputText formControlName="logo" [placeholder]="'FORMS.LOGO' | translate" />
+  <form [formGroup]="exchangesAccountsFormGroup" class="dialog-container">
+
+    <app-color-picker-input title="FORMS.COLOR" formControlName="color" />
+    <app-float-label-input title="FORMS.LOGO" formControlName="logo" />
+    <app-float-label-input title="FORMS.NAME" formControlName="name" />
+
+    <p-tabView formArrayName="apis">
+      @for (api of apisFormArray.controls; track api) {
+        <ng-container [formGroup]="api | asFormGroupPipe">
+          @if (api.get('demo')?.value === true) {
+            <p-tabPanel [header]="'FORMS.DEMO' | translate">
+              <app-float-label-input title="FORMS.API_KEY" formControlName="apiKey"></app-float-label-input>
+              <app-float-label-input title="FORMS.API_SECRET" formControlName="apiSecret"></app-float-label-input>
+            </p-tabPanel>
+          } @else {
+            <p-tabPanel [header]="'FORMS.REAL' | translate">
+              <app-float-label-input title="FORMS.API_KEY" formControlName="apiKey"></app-float-label-input>
+              <app-float-label-input title="FORMS.API_SECRET" formControlName="apiSecret"></app-float-label-input>
+            </p-tabPanel>
+          }
+        </ng-container>
+      }
+    </p-tabView>
+
 
     <div class="actions">
       <p-button [label]="'GENERAL.CANCEL' | translate" [text]="true" (onClick)="onCancel()"></p-button>
-      <p-button [label]="'GENERAL.SAVE' | translate" (onClick)="onSave()" [disabled]="formGroup.invalid"></p-button>
+      <p-button [label]="'GENERAL.SAVE' | translate" (onClick)="onSave()" [disabled]="exchangesAccountsFormGroup.invalid"></p-button>
     </div>
   </form>
 </p-dialog>

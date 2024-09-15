@@ -1,5 +1,4 @@
 {
-  "DASHBOARD": "Tablero",
   "GENERAL": {
     "CREATE": "Crear",
     "UPDATE": "Actualizar",
@@ -8,7 +7,11 @@
   },
   "PAGES": {
     "SIGN_IN": "Iniciar sesión",
-    "SIGN_UP": "Registrarse"
+    "SIGN_UP": "Registrarse",
+    "DASHBOARD": "Tablero",
+    "TRADING": "Operaciones",
+    "SETTINGS": "Configuración",
+    "EXCHANGES_ACCOUNTS": "Cuentas de intercambios"
   },
   "FORMS": {
     "FIRST_NAME": "Nombre",
@@ -23,6 +26,11 @@
     "FORGOT_PASSWORD": "Olvidé mi contraseña",
     "NAME": "Nombre",
     "COLOR": "Color",
-    "LOGO": "Logo"
+    "LOGO": "Logo",
+    "ACTIONS": "Acciones",
+    "API_KEY": "Clave API",
+    "API_SECRET": "Secreto API",
+    "DEMO": "Demo",
+    "REAL": "Real"
   }
 }
