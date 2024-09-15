@@ -5,5 +5,5 @@ export interface ExchangeAccount {
   name: string;
   color: string;
   logo: string;
-  exchangeAccountApis: ExchangeAccountApi[];
+  apis: ExchangeAccountApi[];
 }
