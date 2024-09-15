@@ -84,14 +84,17 @@ export class ExchangeAccountDialogComponent implements OnInit {
     return this.exchangesAccountsFormGroup.get('apis') as FormArray;
   }
 
-  getApi(demo: boolean): FormGroup | null {
-    const apis = this.getApisControls().controls;
-    return apis.find(api => api.get('demo')?.value === demo) as FormGroup | null;
-  }
-
   addApi(isDemo: boolean) {
     const apis = this.exchangesAccountsFormGroup.get('apis') as FormArray;
     apis.push(this.createApiFormGroup(isDemo));
+  }
+
+  filterEmptyApis(apis: FormArray): FormArray {
+    const validApis = apis.controls.filter(api => {
+      const apiGroup = api as FormGroup;
+      return apiGroup.get('apiKey')?.value && apiGroup.get('apiSecret')?.value;
+    });
+    return new FormArray(validApis);
   }
 
   showDialog(exchangeAccount?: ExchangeAccount) {
@@ -134,6 +137,7 @@ export class ExchangeAccountDialogComponent implements OnInit {
   onSave() {
     if (this.exchangesAccountsFormGroup.valid) {
       const exchangeAccount = this.exchangesAccountsFormGroup.value as ExchangeAccount;
+      exchangeAccount.apis = this.filterEmptyApis(this.getApisControls()).controls.map(control => control.value);
       this.exchangeAccount?.id ? this.updateAccountExchange(exchangeAccount) : this.createAccountExchange(exchangeAccount)
     }
   }
