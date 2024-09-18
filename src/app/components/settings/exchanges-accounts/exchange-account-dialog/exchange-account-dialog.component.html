@@ -10,19 +10,16 @@
         <ng-container [formGroup]="api | asFormGroupPipe">
           @if (api.get('demo')?.value === true) {
             <p-tabPanel [header]="'FORMS.DEMO' | translate">
-              <app-float-label-input title="FORMS.API_KEY" formControlName="apiKey"></app-float-label-input>
-              <app-float-label-input title="FORMS.API_SECRET" formControlName="apiSecret"></app-float-label-input>
+              <ng-container [ngTemplateOutlet]="apiFields" [ngTemplateOutletContext]="{ formGroup: api }"></ng-container>
             </p-tabPanel>
           } @else {
             <p-tabPanel [header]="'FORMS.REAL' | translate">
-              <app-float-label-input title="FORMS.API_KEY" formControlName="apiKey"></app-float-label-input>
-              <app-float-label-input title="FORMS.API_SECRET" formControlName="apiSecret"></app-float-label-input>
+              <ng-container [ngTemplateOutlet]="apiFields" [ngTemplateOutletContext]="{ formGroup: api }"></ng-container>
             </p-tabPanel>
           }
         </ng-container>
       }
     </p-tabView>
-
 
     <div class="actions">
       <p-button [label]="'GENERAL.CANCEL' | translate" [text]="true" (onClick)="onCancel()"></p-button>
@@ -33,3 +30,11 @@
     </div>
   </form>
 </p-dialog>
+
+<ng-template #apiFields let-formGroup="formGroup">
+  <ng-container [formGroup]="formGroup">
+    <app-float-label-input title="FORMS.NAME" formControlName="name"></app-float-label-input>
+    <app-float-label-input title="FORMS.API_KEY" formControlName="apiKey"></app-float-label-input>
+    <app-float-label-input title="FORMS.API_SECRET" formControlName="apiSecret"></app-float-label-input>
+  </ng-container>
+</ng-template>

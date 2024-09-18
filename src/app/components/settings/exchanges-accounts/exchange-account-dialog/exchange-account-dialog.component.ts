@@ -15,6 +15,7 @@ import {ColorPickerInputComponent} from "@app/components/custom/color-picker-inp
 import {TabViewModule} from "primeng/tabview";
 import {AsFormGroupPipe} from "@app/core/pipes/as-form-group/as-form-group.pipe";
 import {ProgressSpinnerModule} from "primeng/progressspinner";
+import {NgTemplateOutlet} from "@angular/common";
 
 @Component({
   selector: 'app-exchange-account-dialog',
@@ -33,7 +34,8 @@ import {ProgressSpinnerModule} from "primeng/progressspinner";
     FloatLabelInputComponent,
     ColorPickerInputComponent,
     TabViewModule,
-    AsFormGroupPipe
+    AsFormGroupPipe,
+    NgTemplateOutlet
   ],
   templateUrl: './exchange-account-dialog.component.html',
   styleUrls: ['./exchange-account-dialog.component.scss']
