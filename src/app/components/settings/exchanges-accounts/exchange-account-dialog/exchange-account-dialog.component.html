@@ -26,7 +26,10 @@
 
     <div class="actions">
       <p-button [label]="'GENERAL.CANCEL' | translate" [text]="true" (onClick)="onCancel()"></p-button>
-      <p-button [label]="'GENERAL.SAVE' | translate" (onClick)="onSave()" [disabled]="exchangesAccountsFormGroup.invalid"></p-button>
+      <p-button [label]="'GENERAL.SAVE' | translate" (onClick)="onSave()"
+                [loading]="isLoading"
+                [disabled]="exchangesAccountsFormGroup.invalid"
+      ></p-button>
     </div>
   </form>
 </p-dialog>

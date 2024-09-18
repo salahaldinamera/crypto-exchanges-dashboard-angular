@@ -14,6 +14,7 @@ import {FloatLabelInputComponent} from "@app/components/custom/float-label-input
 import {ColorPickerInputComponent} from "@app/components/custom/color-picker-input/color-picker-input.component";
 import {TabViewModule} from "primeng/tabview";
 import {AsFormGroupPipe} from "@app/core/pipes/as-form-group/as-form-group.pipe";
+import {ProgressSpinnerModule} from "primeng/progressspinner";
 
 @Component({
   selector: 'app-exchange-account-dialog',
@@ -46,6 +47,8 @@ export class ExchangeAccountDialogComponent implements OnInit {
 
   exchangesAccountsFormGroup!: FormGroup;
   apisFormArray!: FormArray;
+
+  isLoading: boolean = false;
 
   constructor(
     private exchangesAccountsService: ExchangesAccountsService,
@@ -121,16 +124,23 @@ export class ExchangeAccountDialogComponent implements OnInit {
   }
 
   createAccountExchange(exchangeAccount: ExchangeAccount) {
+    this.isLoading = true;
     this.exchangesAccountsService.createExchangeAccount(exchangeAccount).subscribe((data: ExchangeAccount) => {
       this.exchangeAccountEmitter.emit(data);
       this.visible = false;
+    }, error => {
+      this.isLoading = false;
     })
   }
 
   updateAccountExchange(exchangeAccount: ExchangeAccount) {
+    this.isLoading = true;
     this.exchangesAccountsService.updateExchangeAccount(exchangeAccount.id, exchangeAccount).subscribe((data: ExchangeAccount) => {
       this.exchangeAccountEmitter.emit(data);
       this.visible = false;
+      this.isLoading = false;
+    }, error => {
+      this.isLoading = false;
     })
   }
 
