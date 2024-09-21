@@ -1,0 +1,21 @@
+import {Injectable} from "@angular/core";
+import {environment} from "@src/environments/environment";
+import {HttpClient} from "@angular/common/http";
+
+
+@Injectable({providedIn: 'root'})
+export class AccountService {
+  private baseUrl: string = environment.baseUrl + 'api/v1/account/';
+
+  private balanceUrl: string = 'balance';
+
+  constructor(
+    private http: HttpClient
+  ) {
+  }
+
+  getBalance() {
+    const url = this.baseUrl + this.balanceUrl;
+    return this.http.get(url);
+  }
+}

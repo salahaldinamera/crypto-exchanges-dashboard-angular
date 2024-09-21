@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TranslateModule} from "@ngx-translate/core";
+import {AccountService} from "@app/core/services/account/account.service";
 
 @Component({
   selector: 'app-dashboard',
@@ -12,4 +13,11 @@ import {TranslateModule} from "@ngx-translate/core";
 })
 export class DashboardComponent {
 
+
+  constructor(
+    private accountService: AccountService,
+  ) {
+    accountService.getBalance().subscribe(() => {
+    })
+  }
 }
