@@ -130,6 +130,7 @@ export class ExchangeAccountDialogComponent implements OnInit {
     this.exchangesAccountsService.createExchangeAccount(exchangeAccount).subscribe((data: ExchangeAccount) => {
       this.exchangeAccountEmitter.emit(data);
       this.visible = false;
+      this.isLoading = false;
     }, error => {
       this.isLoading = false;
     })
