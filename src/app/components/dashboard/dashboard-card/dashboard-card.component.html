@@ -1,6 +1,10 @@
 <div class="dashboard-card card">
-  <div>
-    <span class="pi pi-dollar"></span>
-    <p>{{ TranslationKeys.GENERAL_BALANCE | translate }}</p>
+  <div class="title">
+    <span class="pi {{titleIcon()}}"></span>
+    <p>{{ title() | translate }}</p>
+  </div>
+  <div class="content">
+    <span class="pi {{contentIcon()}}"></span>
+    <p>{{ content() }}</p>
   </div>
 </div>

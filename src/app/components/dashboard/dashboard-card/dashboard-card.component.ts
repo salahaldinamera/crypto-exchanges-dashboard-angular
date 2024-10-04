@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {TranslateModule} from "@ngx-translate/core";
 import {TranslationKeys} from "@app/core/enums/translations.enum";
 
@@ -12,6 +12,9 @@ import {TranslationKeys} from "@app/core/enums/translations.enum";
   styleUrl: './dashboard-card.component.scss'
 })
 export class DashboardCardComponent {
+  title = input<string>('');
+  content = input<string>('');
 
-  protected readonly TranslationKeys = TranslationKeys;
+  titleIcon = input<string>('');
+  contentIcon = input<string>('');
 }
