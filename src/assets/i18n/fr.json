@@ -1,36 +1,37 @@
 {
   "GENERAL": {
     "CREATE": "Créer",
-    "UPDATE": "Mettre à jour",
+    "UPDATE": "Mettre à Jour",
     "SAVE": "Enregistrer",
-    "CANCEL": "Annuler"
+    "CANCEL": "Annuler",
+    "BALANCE": "Solde"
   },
   "PAGES": {
-    "SIGN_IN": "Se connecter",
+    "SIGN_IN": "Se Connecter",
     "SIGN_UP": "S'inscrire",
-    "DASHBOARD": "Tableau de bord",
+    "DASHBOARD": "Tableau de Bord",
     "TRADING": "Trading",
     "SETTINGS": "Paramètres",
-    "EXCHANGES_ACCOUNTS": "Comptes d'échanges"
+    "EXCHANGES_ACCOUNTS": "Comptes d'Échange"
   },
   "FORMS": {
     "FIRST_NAME": "Prénom",
-    "LAST_NAME": "Nom de famille",
-    "USERNAME": "Nom d'utilisateur",
-    "PASSWORD": "Mot de passe",
-    "CONFIRM_PASSWORD": "Confirmer le mot de passe",
-    "SIGN_IN": "Se connecter",
+    "LAST_NAME": "Nom",
+    "USERNAME": "Nom d'Utilisateur",
+    "PASSWORD": "Mot de Passe",
+    "CONFIRM_PASSWORD": "Confirmer le Mot de Passe",
+    "SIGN_IN": "Se Connecter",
     "SIGN_UP": "S'inscrire",
     "SIGN_UP_LINK": "S'inscrire",
-    "SIGN_IN_LINK": "Se connecter",
-    "FORGOT_PASSWORD": "Mot de passe oublié",
+    "SIGN_IN_LINK": "Se Connecter",
+    "FORGOT_PASSWORD": "Mot de Passe Oublié",
     "NAME": "Nom",
     "COLOR": "Couleur",
     "LOGO": "Logo",
     "ACTIONS": "Actions",
     "API_KEY": "Clé API",
     "API_SECRET": "Secret API",
-    "DEMO": "Démo",
+    "DEMO": "Démonstration",
     "REAL": "Réel"
   }
 }

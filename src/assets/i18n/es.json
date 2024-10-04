@@ -3,27 +3,28 @@
     "CREATE": "Crear",
     "UPDATE": "Actualizar",
     "SAVE": "Guardar",
-    "CANCEL": "Cancelar"
+    "CANCEL": "Cancelar",
+    "BALANCE": "Saldo"
   },
   "PAGES": {
-    "SIGN_IN": "Iniciar sesión",
+    "SIGN_IN": "Iniciar Sesión",
     "SIGN_UP": "Registrarse",
     "DASHBOARD": "Tablero",
-    "TRADING": "Operaciones",
-    "SETTINGS": "Configuración",
-    "EXCHANGES_ACCOUNTS": "Cuentas de intercambios"
+    "TRADING": "Comercio",
+    "SETTINGS": "Configuraciones",
+    "EXCHANGES_ACCOUNTS": "Cuentas de Intercambio"
   },
   "FORMS": {
     "FIRST_NAME": "Nombre",
     "LAST_NAME": "Apellido",
-    "USERNAME": "Nombre de usuario",
+    "USERNAME": "Nombre de Usuario",
     "PASSWORD": "Contraseña",
-    "CONFIRM_PASSWORD": "Confirmar contraseña",
-    "SIGN_IN": "Iniciar sesión",
+    "CONFIRM_PASSWORD": "Confirmar Contraseña",
+    "SIGN_IN": "Iniciar Sesión",
     "SIGN_UP": "Registrarse",
     "SIGN_UP_LINK": "Registrarse",
-    "SIGN_IN_LINK": "Iniciar sesión",
-    "FORGOT_PASSWORD": "Olvidé mi contraseña",
+    "SIGN_IN_LINK": "Iniciar Sesión",
+    "FORGOT_PASSWORD": "Olvidé mi Contraseña",
     "NAME": "Nombre",
     "COLOR": "Color",
     "LOGO": "Logo",

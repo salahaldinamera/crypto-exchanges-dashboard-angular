@@ -4,7 +4,7 @@ import {FloatLabelModule} from "primeng/floatlabel";
 import {InputTextModule} from "primeng/inputtext";
 import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule} from "@angular/forms";
 import {TranslateModule} from "@ngx-translate/core";
-import {FloatLabelInputComponent} from "@app/components/custom/float-label-input/float-label-input.component";
+import {FloatLabelInputComponent} from "@app/components/ui/float-label-input/float-label-input.component";
 
 @Component({
   selector: 'app-color-picker-input',

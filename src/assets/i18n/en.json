@@ -3,7 +3,8 @@
     "CREATE": "Create",
     "UPDATE": "Update",
     "SAVE": "Save",
-    "CANCEL": "Cancel"
+    "CANCEL": "Cancel",
+    "BALANCE": "Balance"
   },
   "PAGES": {
     "SIGN_IN": "Sign In",
